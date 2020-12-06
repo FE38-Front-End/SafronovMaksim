@@ -1,45 +1,104 @@
-const addUl = document.getElementsByClassName('button--one')[0];
-let newUl;
-addUl.addEventListener('click', () => {
-    if(newUl){
-        alert('Вы уже создали список!')
+//Создание квадрата и окружности
+const addSquare = document.getElementById('squareApply');
+let squareHidth;
+let square;
+addSquare.addEventListener('click', () => {
+    if(square){
+        alert('Квадрат уже создан!');
     }else{
-        newUl = document.createElement('ul');
-        document.body.appendChild(newUl);
+        square = document.createElement('div');
+        squareWidth = document.getElementById("squareWidth").value;
+        square.style.height = squareWidth + 'px';
+        square.style.width = squareWidth + 'px';
+        square.style.margin = '20px';
+        square.style.border = '2px double black';
+        square.style.position = 'relative';
+        square.style.display = 'flex';
+        square.style.justifyContent = 'center';
+        square.style.alignItems = 'center';
+        document.body.appendChild(square);
+        alert('Вы создали квадрат');
     }
 });
-    
-const addLi = document.getElementsByClassName('button--two')[0]; 
-let newLi;
-addLi.addEventListener('click', () => {
-    if(!newUl){
-        alert('Сперва создайте список');
+const deleteSquare = document.getElementById('squareClear');
+deleteSquare.addEventListener('click', () => {
+    let delSquare = document.querySelectorAll('div');
+    if(delSquare.length > 0){
+        delSquare.parentNode.removeChild(delSquare);
     }else{
-        newLi = document.createElement('li');
-        newLi.innerHTML = new Date().toLocaleString();
-        newUl.appendChild(newLi);
-    }
-});
-
-const deleteLi = document.getElementsByClassName('button--three')[0];
-deleteLi.addEventListener('click', () => {
-    const newLi = document.querySelectorAll('li');
-    if(newLi.length === 0){
-        alert('В списке нету элементов');
-    }else{
-        newUl.removeChild(newUl.lastChild);
+        alert('Квадрат отсутствует');
     }
 });
 
 
+const addCircle = document.getElementById('circleApply');
+let circle;
+addCircle.addEventListener('click', () => {
+    if(square){
+        if(!circle){
+            circle = document.createElement('div');
+            circleWidth = document.getElementById('circleWidth').value;
+            circle.style.width = circleWidth + 'px';
+            circle.style.height = circleWidth + 'px';
+            circle.style.borderRadius = 100 +'%';
+            circle.style.border = '2px double black';
+            circle.style.position = 'relative';
+            circle.style.left = '0px';
+            circle.style.top = '0px';
+            circle.style.right = '0px';
+            circle.style.bottom = '0px';
+            if(parseInt(circleWidth, 10) <=  parseInt(squareWidth, 10)){
+                square.appendChild(circle);
+            }else{
+                alert('Окружность не может быть больше квадрата, проверьте значения');
+            }
+        }else{
+            alert('Вы уже создали круг');
+        }
+    }else{
+        alert('Сперва создайте квадрат');
+    }
+})
+//Создание интерфейса
+function moveRight(){
+    let left = circle.style.left;
+    left = parseInt(left);
+    if(left < squareWidth/2){
+        left += parseInt(document.getElementById('step').value);
+        circle.style.left = left +'px';
+    }
+}
+function moveLeft(){
+    let left = circle.style.left;
+    left = parseInt(left);
+    if(left > -squareWidth/2){
+        left -= parseInt(document.getElementById('step').value);
+        circle.style.left = left +'px';
+    }
+}
+let right = document.getElementById('right');
+    left = document.getElementById('left');
+right.addEventListener('click',moveRight);
+left.addEventListener('click',moveLeft);
 
+function moveDown(){
+    let down = circle.style.top;
+    down = parseInt(down);
+    if(down < squareWidth/2){
+        down += parseInt(document.getElementById('step').value);
+        circle.style.top = down +'px';
+    }
+}
+function moveUp(){
+    let down = circle.style.top;
+    down = parseInt(down);
+    if(down > -squareWidth/2){
+        down -= parseInt(document.getElementById('step').value);
+        circle.style.top = down +'px';
+    }
+}
+let down = document.getElementById('down');
+    up = document.getElementById('up');
+down.addEventListener('click',moveDown);
+up.addEventListener('click', moveUp);
 
- 
-
-
-// Добавить на страницу 3 кнопки
-// 1 добавляет список на страницу (ul)
-// 2 добавляет элемент списка (li) с временем нажатия на кнопку
-// 3 удаляет последний элемент из списка
-// предусмотреть защиту от дурака
-// все действия производим в js (кроме добавления кнопок)
