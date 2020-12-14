@@ -1,4 +1,4 @@
-#circleApply, #squareApply,#squareClear,#button_up, #button_down, #button_right, #button_left {
+#circleApply, #squareApply,#squareClear,#button_up, #button_down, #button_right, #button_left,#circleClear {
     color: black;
     background-color:yellow;
     border: solid 1px black;
