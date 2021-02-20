@@ -1,0 +1,19 @@
+.c-navigation__item{
+    color: white;
+    @include  montserrat_600;
+    &--black{
+        color: #737373;
+    }
+    &:not(first-child){
+        margin-left: 41px;
+    }
+}
+.c-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @include screen-max($lg){
+        display: none;
+    }
+}

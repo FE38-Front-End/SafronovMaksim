@@ -1,0 +1,299 @@
+.l-s-shop-filter__section{
+    margin-bottom: 24px;
+    padding: 30px 35px 35px 35px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+}
+.l-s-shop-filter__section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    margin-bottom: 19px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+
+
+}
+.l-s-shop-filter__search{
+    margin-top: 19px ;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #DCDCDC;
+    background: #FCFCFC;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    &-text{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        color: #737373;
+        border: none;
+        background-color: #FCFCFC;
+        width: 100%;
+        margin: 18px 0px 18px 23px;
+       
+        
+    }
+    &-logo{
+        margin-left: auto;
+        
+        padding-top: 15.5px;
+        padding-bottom: 15.5px;
+        padding-right: 15.5px;
+    }
+}
+
+
+.l-s-shop-filter__categories{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    padding: 20px 0px 0px 0px;
+
+    input {
+        display: none;
+
+        &:checked ~.dropdown__menu {
+            display: block;
+        }
+
+        &:checked ~ .dropdown__control {
+            .dropdown__control-button {
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                color: white;
+                background-color: #2091F9;
+            }
+        }
+    }
+    
+    &__control {
+     display: flex;
+     align-items: center;
+    }    
+	
+    &__control-button{
+        margin-left: auto;
+        background: #F1F1F1;
+        width: 25px;
+        height: 25px;
+        border-radius: 26px;
+        color:#BDBDBD;
+        border:0px;
+    }
+    
+    &__menu{
+        display: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        &-item{
+            padding-top: 12px;
+        }
+    }
+}
+
+.l-s-shop-filter__radio{
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-top: 17px;
+    width: 100%;
+    &:first-child{
+        margin-top: 24px;
+    }
+}
+.radio_button{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #DCDCDC;
+    border-radius: 16px;    
+    &:checked{
+        background-color: white;
+        border: #2091F9 5px solid;
+    }
+    
+}
+.radio_name{
+    margin-left: 15px;
+}
+.radio_number{
+    margin-left: auto;
+}
+
+
+
+.price-input{
+    display: flex;
+    flex-direction: row;
+    .price-range{
+        width: 130px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child{
+            margin-right: 16px;
+        }
+    }
+}
+.price__band{
+    margin-top: 60px;
+    margin-bottom: 35px;
+    width: 275px;
+    height: 6px;
+    background: #E6E6E6;
+    border-radius: 20px;
+    position: relative;
+    .price__block{
+        position: absolute;
+        width: 28px;
+        background: #252B42;
+        border-radius: 2px;
+        padding-left: 16px;
+        padding-right: 6px;
+        position: absolute;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        border-radius: 2px;
+        &--end{
+            width: 43px;
+            height: 24px;
+            left: 180px;
+            top: -40px;
+            padding-right: 10px;
+        }
+        &--start{
+            width: 43px;
+            height: 24px;
+            left: 40px;
+            top: -40px;
+            padding-right: 15px;
+        }
+    }
+    &--active{
+        width: 151px;
+        height: 6px;
+        background: #2DC071;
+        border-radius: 20px;
+        position: absolute;
+        left: 56px;
+    }
+}
+.price-circle{
+    
+    &--start{
+    border: none;
+    bottom:-3px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #2DC071;
+    border-radius: 13px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    &--end{
+    border: none;
+    bottom:-3px;
+    left: 140px;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #2DC071;
+    border-radius: 13px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);   
+    }
+}
+
+
+
+.l-s-shop-filter__checkbox{
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    padding: 30px 35px 35px 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-top: 30px;
+    &-item{
+        display: flex;
+        flex-direction: row;
+        margin-top: 18px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+}
+.checkbox_button{
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #DCDCDC; 
+    border-radius: 5px;
+    &:hover{
+        border: #2091F9 2px solid;
+    }   
+    &:checked{
+        background-color: #2091F9;
+        border: #2091F9 2px solid;
+        background-image: url(/src/images/ok.svg);
+        background-size: contain;
+    }
+}
+

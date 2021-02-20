@@ -1,0 +1,79 @@
+.p-m-catalog{
+    background-color: white;
+    border: 1px solid #E9E9E9;
+    .wrapper{
+        @include flex;
+        flex-direction: row;
+        padding: 50px 30px 30px 50px; 
+        @include screen-max($lg){
+            display: flex;
+            flex-direction: column;
+        }
+        .p-m-hat_shoes{
+            display: flex;
+            flex-direction: column;
+            padding-right: 40px;
+        }
+        .p-m-dresses{
+            padding-right: 40px;
+        }
+        .p-m-bag_clothes{
+            display: flex;
+            flex-direction: column;
+            @include screen-max($lg){
+                padding-right: 40px;
+            }
+            
+        }
+               
+    }
+}
+
+
+.p-m-catalog__item{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    width: 370px;
+    height: 220px;
+    margin-bottom: 29px;
+    @include flex;
+    
+    @include screen-max($lg){
+        width: 100%;
+    }
+    
+}
+.p-m-catalog__item-hat{
+    position: relative;
+    @include screen-max($lg){
+        width: 100%;
+    }
+}
+.p-m-catalog__item-shoes{
+    @include screen-max($lg){
+        width: 100%;
+    }
+    
+}
+.p-m-catalog__item-bag{
+   
+}
+.p-m-catalog__item-clothes{
+    
+}
+.p-m-catalog__item-dresses{
+    img{
+        width: 365px;
+        height: 468px;
+    }
+    width: 310px;
+    height: 468px;
+    @include screen-max($lg){
+        width: 365px;
+        background-size: cover;
+    }
+}

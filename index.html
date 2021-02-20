@@ -1,39 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-<body>
-<div class="calculator">
-  <div class="container">
-    <div class="screen">0</div>
-  <button class="number" data-type ="7">7</button>
-  <button class="number" data-type="8">8</button>
-  <button class="number" data-type="9">9</button>
-  <button class="operation" data-sign="-">-</button>
+<html xmlns="//www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>TMS Shop</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
 
-  <button class="number" data-type="4">4</button>
-  <button class="number" data-type="5">5</button>
-  <button class="number" data-type="6">6</button>
-  <button class="operation" data-sign="+">+</button>
+	<body>
+		<div class="p-m-hero-background">
+			<div class="l-header">
+				<div class="l-header__logo">
+					<img src="/src/images/Rectangle_4.png">
+				</div>
+				<div class="c-navigation">
+					<nav class="c-navigation__item">
+						<a class="c-navigation__item" href="">Home</a>
+						<a class="c-navigation__item" href="">Shop</a>
+						<a class="c-navigation__item" href="">Account</a>
+						<a class="c-navigation__item" href="">Pages</a>
+						<a class="c-navigation__item" href="">Blog</a>
+						<a class="c-navigation__item" href="">Docs / Components</a>
+					</nav>
+				</div>
+				<div class="c-account">
+					<a class="c-account-profile">
+						<div class="c-account-profile__avatar">
+							<img class="c-account-profile__avatar--img" src="/src/images/Group.png">
+						</div>
+						<p class="c-account-profile__cabinet">My Account</p>
+					</a>
+					<a class="c-account__favorite">
+						<img src="/src/images/Vector.png">
+					</a>
+					<a class="c-account-basket">
+						<img class="c-account-basket__image" src="/src/images/vector_1.png">
+						<span class="c-account-basket__number">1</span>
+					</a>
+					<div class="c-menu">								
+						<button>
+							<svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.666992 0.934814H27.3337V3.60148H0.666992V0.934814ZM7.33366 7.60148H27.3337V10.2681H7.33366V7.60148ZM15.667 14.2681H27.3337V16.9348H15.667V14.2681Z" fill="white"/>
+							</svg>	
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="p-m-promo">
+				<h3 class="p-m-promo__title">SUMMER 2020</h3>
+				<h1 class="p-m-promo__subtitle">New Collection</h1>
+				<p class="p-m-promo__tagline">Find The Perfect style for you </p>
+				<button class="c-button">Shop Now</button>
+			</div>	
+		</div>
+		<div class="p-m-catalog">
+			<div class="wrapper">
+				<div class="p-m-hat_shoes">
+					<a class="p-m-catalog__item p-m-catalog__item-hat">
+						<img src="/src/images/picture_1.png">
+						<button class="c-catalog__button">HAT</button>
+					</a>
+					<a class="p-m-catalog__item p-m-catalog__item-shoes">
+						<img src="/src/images/picture_2.png">
+						<button class="c-catalog__button">SHOES</button>
+					</a>
+				</div>
+				<div class="p-m-dresses">
+					<a class="p-m-catalog__item p-m-catalog__item-dresses">
+						<img src="/src/images/picture_3.png">
+						<button class="c-catalog__button">DRESSES</button>
+					</a>
+				</div>
+				<div class="p-m-bag_clothes">
+					<a class="p-m-catalog__item p-m-catalog__item-bag">
+						<img src="/src/images/picture_4.png">
+						<button class="c-catalog__button">BAGS</button>
+					</a>
+					<a class="p-m-catalog__item p-m-catalog__item-clothes">
+						<img src="/src/images/picture_5.png">
+						<button class="c-catalog__button">CLOTHES</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-m-featured-products">
+			<div class="p-m-featured-products-content">
+				<div class="p-m-featured-products-content__title">Featured Products</div>
+				<div class="p-m-featured-products-content__slider">
+					<a class="p-m-featured-products-content__slider-element p-m-featured-products-content__slider-element-active">Featured
+						<div class="line"></div>
+					</a>
+					<a class="p-m-featured-products-content__slider-element">Best Seller
+						<div class="line"></div>
+					</a>
+					<a class="p-m-featured-products-content__slider-element">New Arrivals
+						<div class="line"></div>
+					</a>
+				</div>
+			</div>
+			
 
 
-  <button class="number" data-type="1">1</button>
-  <button class="number" data-type="2">2</button>
-  <button class="number" data-type="3">3</button>
-  <button class="operation" data-sign="/">÷</button>
+			<div class="p-m-cataloger">
+				<div class="product-card">
+					<img class="product-card-picture" src="/src/images/picture_6.png">
+					<img class="commend" src="/src/images/avatar.png">
+					<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+					<div class="product-card-price">$32.00</div>
+					<div class="product-card-choise">
+						<button class="choise choise-blue"></button>
+						<button class="choise choise-green"></button>
+						<button class="choise choise-orange"></button>
+						<button class="choise choise-purple"></button>
+					</div>
+					<div class="product-card-size">
+						<button class="size">XL</button>
+						<button class="size">L</button>
+						<button class="size">M</button>
+						<button class="size">S</button>
+					</div>
+				</div>
+				<div class="product-card">
+					<img class="product-card-picture" src="/src/images/picture_7.png">
+					<img class="commend" src="/src/images/avatar.png">
+					<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+					<div class="product-card-price">$32.00</div>
+					<div class="product-card-choise">
+						<button class="choise choise-blue"></button>
+						<button class="choise choise-green"></button>
+						<button class="choise choise-orange"></button>
+						<button class="choise choise-purple"></button>
+					</div>
+					<div class="product-card-size">
+						<button class="size">XL</button>
+						<button class="size">L</button>
+						<button class="size">M</button>
+						<button class="size">S</button>
+					</div>
+				</div>
+				<div class="product-card">
+					<img class="product-card-picture" src="/src/images/picture_8.png">
+					<img class="commend" src="/src/images/avatar.png">
+					<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+					<div class="product-card-price">$32.00</div>
+					<div class="product-card-choise">
+						<button class="choise choise-blue"></button>
+						<button class="choise choise-green"></button>
+						<button class="choise choise-orange"></button>
+						<button class="choise choise-purple"></button>
+					</div>
+					<div class="product-card-size">
+						<button class="size">XL</button>
+						<button class="size">L</button>
+						<button class="size">M</button>
+						<button class="size">S</button>
+					</div>
+				</div>
+				<div class="product-card">
+					<img class="product-card-picture" src="/src/images/picture_9.png">
+					<img class="commend" src="/src/images/avatar.png">
+					<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+					<div class="product-card-price">$32.00</div>
+					<div class="product-card-choise">
+						<button class="choise choise-blue"></button>
+						<button class="choise choise-green"></button>
+						<button class="choise choise-orange"></button>
+						<button class="choise choise-purple"></button>
+					</div>
+					<div class="product-card-size">
+						<button class="size">XL</button>
+						<button class="size">L</button>
+						<button class="size">M</button>
+						<button class="size">S</button>
+					</div>
+				</div>
+			</div>
 
-  
-  <button class="decimal" data-type=".">.</button>
-  <button class="number" data-type="0">0</button>
-  <button class="equal">=</button>
-  <button class="operation" data-sign="*">×</button>
-  <button class="clear">C</button>
-</div>
-</div>
 
-<script src="script.js"></script>
-</body>
+
+
+
+			
+		
+			<div class="p-latest-products">
+				<div class="wrapper">
+					<h3 class="p-latest-products__title">Latest Products</h3>
+					<div class="p-latest-products-catalog">
+						<div class="p-latest-products-catalog-row1">
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_10.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_11.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_12.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_13.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+						</div>
+						<div class="p-latest-products-catalog-row2">
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_14.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_15.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_16.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+							<div class="product-card product-card-small">
+								<img class="product-card-picture" src="/src/images/picture_17.jpg">
+								<img class="commend" src="/src/images/avatar.png">
+								<div class="product-card-name">Men's Essential Tee<br><span class="color">(Black)</span></div>
+								<div class="product-card-price">$32.00</div>
+								<div class="product-card-size">
+									<button class="size">XL</button>
+									<button class="size">L</button>
+									<button class="size">M</button>
+									<button class="size">S</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="p-blog">
+			<div class="wrapper">
+				<div class="p-blog__title">Our Blog</div>
+				<div class="p-blog-article">
+					<div class="p-blog-article__topic">
+						<img class="p-blog-article__topic-image" src="/src/images/picture_18.png">
+						<div class="p-blog-article__topic-text">
+							<div class="p-blog-article__topic-text-date">20 JUNE 2019</div>
+							<div class="p-blog-article__topic-text-title">Life Tips From 
+								Top Ten Adventure </div>
+							<div class="p-blog-article__topic-text-subtitle">Slate helps you see how many 
+								more days you need to work to 
+								reach.</div>
+							<div class="p-blog-article__topic-text-link">
+								<a class="p-blog-article__topic-text-link">Google</a>
+								<a class="p-blog-article__topic-text-link">Trending</a>
+								<a class="p-blog-article__topic-text-link">New</a>
+							</div>
+						</div>
+					</div>
+					<div class="p-blog-article__topic">
+						<img class="p-blog-article__topic-image" src="/src/images/picture_19.png">
+						<div class="p-blog-article__topic-text">
+							<div class="p-blog-article__topic-text-date">20 JUNE 2019</div>
+							<div class="p-blog-article__topic-text-title">Life Tips From 
+								Top Ten Adventure</div>
+							<div class="p-blog-article__topic-text-subtitle">Slate helps you see how many 
+								more days you need to work to 
+								reach.</div>
+							<div class="p-blog-article__topic-text-link">
+								<a class="p-blog-article__topic-text-link">Google</a>
+								<a class="p-blog-article__topic-text-link">Trending</a>
+								<a class="p-blog-article__topic-text-link">New</a>
+							</div>
+						</div>
+					</div>
+					<div class="p-blog-article__topic">
+						<img class="p-blog-article__topic-image" src="/src/images/picture_20.png">
+						<div class="p-blog-article__topic-text">
+							<div class="p-blog-article__topic-text-date">20 JUNE 2019</div>
+							<div class="p-blog-article__topic-text-title">Life Tips From 
+								Top Ten Adventure</div>
+							<div class="p-blog-article__topic-text-subtitle">Slate helps you see how many 
+								more days you need to work to 
+								reach.</div>
+							<div class="p-blog-article__topic-text-link">
+								<a class="p-blog-article__topic-text-link">Google</a>
+								<a class="p-blog-article__topic-text-link">Trending</a>
+								<a class="p-blog-article__topic-text-link">New</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="shop-inst">
+			<div class="shop-inst__title">Shop on Instagram</div>
+			<div class="shop-inst-slider">
+				<div class="shop-inst-slider__item">
+					<img class="shop-inst__picture" src="/src/images/picture_21.png">
+					<a class="shop-inst-slider__button">Summer</a>
+				</div>
+				<div class="shop-inst-slider__item">
+					<img class="shop-inst__picture" src="/src/images/picture_22.png">
+					<a class="shop-inst-slider__button">Bags</a>
+				</div>
+				<div class="shop-inst-slider__item">
+					<img class="shop-inst__picture" src="/src/images/picture_23.png">
+					<a class="shop-inst-slider__button">Hats</a>
+				</div>
+				<div class="shop-inst-slider__item">
+					<img class="shop-inst__picture" src="/src/images/picture_24.png">
+					<a class="shop-inst-slider__button">Casual</a>
+				</div>
+				<div class="shop-inst-slider__item--mobile">
+					<img class="shop-inst__picture" src="/src/images/shop_inst.jpg">
+					<a class="shop-inst-slider__button">Music</a>
+				</div>
+			</div>
+			<div class="shop-inst__buttons">
+				<a class="shop-inst__buttons-big">
+					<img class="shop-inst__buttons-big-back" src="/src/images/next.png">
+				</a>
+				<a class="shop-inst__buttons-little shop-inst__buttons-little--mobile"></a>
+				<a class="shop-inst__buttons-little"></a>
+				<a class="shop-inst__buttons-little"></a>
+				<a class="shop-inst__buttons-little"></a>
+				<a class="shop-inst__buttons-little shop-inst__buttons-little--mobile"></a>
+				<a class="shop-inst__buttons-big-next">
+					<img class="shop-inst__	buttons-big-next" src="/src/images/next.png">
+				</a>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__wrapper">
+				<img class="footer-logo" src="/src/images/Rectangle_4.png"></img>
+				<div class="footer-navigation">
+					<a class="footer-navigation__item">Home</a>
+					<a class="footer-navigation__item">Shop</a>
+					<a class="footer-navigation__item">Account</a>
+					<a class="footer-navigation__item">Pages</a>
+					<a class="footer-navigation__item">Blog</a>
+					<a class="footer-navigation__item">Docs / Components</a>
+				</div>
+				<div class="footer-networks">
+					<img class="footer-networks__item" src="/src/images/twitter.png"></img>
+					<img class="footer-networks__item" src="/src/images/facebook.png"></img>
+					<img class="footer-networks__item" src="/src/images/linkedin.png"></img>
+				</div>
+			</div>	
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

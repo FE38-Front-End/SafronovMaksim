@@ -1,0 +1,117 @@
+.c-button{
+    padding: 16px 46px 16px 46px;
+    background: #FFFFFF;
+    color: #2091F9;
+    border:none;
+    margin-top: 31px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    @include screen-max($lg){
+        margin-bottom: 180px;
+    }
+    &:focus{
+        background-color: grey;
+    }
+}
+.c-catalog__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px 15px 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    position: absolute;
+}
+.c-pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 22px;
+    
+    &__next{
+         transform: rotate(180deg);
+         margin-left: 10px;
+    }
+    &--big{
+        background: #FFFFFF;
+        border: 1px solid #8EC2F2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 13px 22px 13px 20px;
+        margin-right: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color: #2091F9;
+            border:1px solid #2091F9;
+        }
+    }
+    &__number-page{
+        background: #FFFFFF;
+        border: 1px solid #8EC2F2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 12px 15px 12px 15px;
+        margin-right: 17px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #8EC2F2;
+        @include screen-max($lg){
+            display: none;
+        }
+        &:hover{
+            color: white;
+            background-color: #2091F9;
+        }
+        &:last-child{
+            margin-right: 14px;
+        }
+    }
+    &__etc{
+        margin-right: 4px;
+        @include screen-max($lg){
+            display: none;
+        }
+    }
+}
+.page{
+    display: none;
+    @include screen-max($lg){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 19px;
+        padding-right: 19px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: grey;
+        &--active{
+            color: #2091F9;
+        }
+    }
+}

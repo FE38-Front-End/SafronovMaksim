@@ -1,0 +1,44 @@
+.c-bread-crumb{
+    background-color: white;
+    padding: 25px 0px 25px 59px;
+    &__home{
+        margin-right: 13px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #252B42;
+    }
+    &__fashion{
+        margin-left: 13px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+        @include screen-max($lg){
+            display: none;
+        }
+    }
+    &__market{
+        margin-left: 13px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+        @include screen-min($lg){
+            display: none;
+        }
+    }
+    
+}

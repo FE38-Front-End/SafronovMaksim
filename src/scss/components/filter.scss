@@ -1,0 +1,19 @@
+.p-m-promo-second__filter{
+    display: flex;
+    flex-direction: row;
+    .filter__name{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        margin-right: 220px;
+    }
+    .filter-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
